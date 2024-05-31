@@ -35,20 +35,12 @@ namespace Omega\Model;
 class TableName
 {
     /**
-     * Table name.
-     *
-     * @var string $name Holds the name of the database table.
-     */
-    public string $name;
-
-    /**
      * TableName class constructor.
      *
      * @param  string $name Holds the name of the database table.
      * @return void
      */
-    public function __construct( string $name )
-    {
-        $this->name = $name;
-    }
+    public function __construct(
+		  public string $name
+	) {}
 }
